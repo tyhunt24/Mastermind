@@ -1,0 +1,12 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/Mastermind.dir/Code.cpp.o"
+  "CMakeFiles/Mastermind.dir/Mastermind.cpp.o"
+  "CMakeFiles/Mastermind.dir/main.cpp.o"
+  "Mastermind"
+  "Mastermind.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/Mastermind.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
