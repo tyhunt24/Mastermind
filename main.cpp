@@ -1,7 +1,9 @@
 #include <iostream>
+#include "Mastermind.h"
+#include "Code.h"
+
 using namespace std;
 
 int main() {
-    cout << "Hello, World!" << std::endl;
     return 0;
 }

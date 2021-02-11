@@ -4,10 +4,11 @@
 
 #ifndef MASTERMIND_CODE_H
 #define MASTERMIND_CODE_H
+#include <ctime>
+
 
 
 class Code {
-
 };
 
 
