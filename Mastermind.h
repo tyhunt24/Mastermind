@@ -6,9 +6,14 @@
 #define MASTERMIND_MASTERMIND_H
 #include "Code.h"
 #include <ctime>
+using namespace std;
 
 
 class Mastermind {
+private:
+public:
+    Mastermind();
+    void playGame();
 };
 
 

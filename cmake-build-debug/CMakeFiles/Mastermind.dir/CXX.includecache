@@ -6,7 +6,31 @@
 
 #IncludeRegexTransform: 
 
+/Users/jeffreyhunt/Desktop/College/CST-210/Section2/Mastermind/Code.cpp
+Code.h
+/Users/jeffreyhunt/Desktop/College/CST-210/Section2/Mastermind/Code.h
+
+/Users/jeffreyhunt/Desktop/College/CST-210/Section2/Mastermind/Code.h
+ctime
+-
+vector
+-
+
+/Users/jeffreyhunt/Desktop/College/CST-210/Section2/Mastermind/Mastermind.cpp
+Mastermind.h
+/Users/jeffreyhunt/Desktop/College/CST-210/Section2/Mastermind/Mastermind.h
+
+/Users/jeffreyhunt/Desktop/College/CST-210/Section2/Mastermind/Mastermind.h
+Code.h
+/Users/jeffreyhunt/Desktop/College/CST-210/Section2/Mastermind/Code.h
+ctime
+-
+
 /Users/jeffreyhunt/Desktop/College/CST-210/Section2/Mastermind/main.cpp
 iostream
 -
+Mastermind.h
+/Users/jeffreyhunt/Desktop/College/CST-210/Section2/Mastermind/Mastermind.h
+Code.h
+/Users/jeffreyhunt/Desktop/College/CST-210/Section2/Mastermind/Code.h
 
