@@ -6,6 +6,7 @@
 #define MASTERMIND_CODE_H
 #include <ctime>
 #include <vector>
+#include <string>
 
 using namespace std;
 
@@ -13,10 +14,11 @@ using namespace std;
 
 class Code {
 private:
-    vector<int> code;
+    string color;
 
 public:
-    
+    Code();
+    string getColor();
 };
 
 

@@ -4,3 +4,14 @@
 
 #include "Code.h"
 
+Code::Code() {
+    color = "";
+}
+
+string Code::getColor() {
+   return color;
+}
+
+
+
+

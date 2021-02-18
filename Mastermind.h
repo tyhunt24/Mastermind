@@ -9,17 +9,24 @@
 #include <ctime>
 #include <String>
 #include <vector>
+#include <random>
 
 using namespace std;
 
-
 class Mastermind {
 private:
-    vector<string> code;
+    vector<Code> userCode;
+    vector<Code> computerCode;
+    vector<string> choices = {"red", "blue", "green", "orange", "black", "white"};
+    int whitePegs;
+    int blackPegs;
 public:
     Mastermind();
     void playGame();
-    void instructions();
+    void generateWinCode();
+    string getUserCode();
+    bool checkCode();
+    void sendFeedback();
 };
 
 
