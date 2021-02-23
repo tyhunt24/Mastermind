@@ -15,18 +15,20 @@ using namespace std;
 
 class Mastermind {
 private:
-    vector<Code> userCode;
-    vector<Code> computerCode;
-    vector<string> choices = {"red", "blue", "green", "orange", "black", "white"};
+    vector<string> userCode;
+    vector<string> computerCode;
+//    vector<string> choices = {"red", "blue", "green", "orange", "black", "white"};
     int whitePegs;
     int blackPegs;
 public:
     Mastermind();
     void playGame();
-    void generateWinCode();
-    string getUserCode();
+    void generateComputerCode();
+    vector<string> getUserCode(const string& input1, const string& input2, const string& input3, const string& input4);
     bool checkCode();
     void sendFeedback();
+
+
 };
 
 
