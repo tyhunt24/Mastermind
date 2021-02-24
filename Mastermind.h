@@ -17,13 +17,12 @@ class Mastermind {
 private:
     vector<string> userCode;
     vector<string> computerCode;
-//    vector<string> choices = {"red", "blue", "green", "orange", "black", "white"};
     int whitePegs;
     int blackPegs;
 public:
     Mastermind();
     void playGame();
-    void generateComputerCode();
+    vector<string> generateComputerCode();
     vector<string> getUserCode(const string& input1, const string& input2, const string& input3, const string& input4);
     bool checkCode();
     void sendFeedback();

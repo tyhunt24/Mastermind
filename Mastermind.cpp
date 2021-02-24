@@ -17,15 +17,34 @@ vector<string> Mastermind::getUserCode(const string& input1, const string& input
     return userCode;
 }
 
-void Mastermind::generateComputerCode() {
+vector<string> Mastermind::generateComputerCode() {
     srand(time(0));
 
-    vector<string> choices = {"red","blue", "green", "orange", "yellow", "pink"};
-
+    vector<string> colors = {"red", "blue", "orange", "green", "yellow", "white"};
     for(int i=0; i < 4; i++) {
+        int j = rand() % colors.size();
 
+        computerCode.push_back(colors[j]);
+    }
+
+    return computerCode;
+}
+
+bool Mastermind::checkCode() {
+    if(userCode == computerCode) {
+        return true;
+    } else {
+        return false;
     }
 }
+
+void Mastermind::sendFeedback() {
+    if (checkCode()) {
+        cout << "You have answered the correct code.";
+    }
+}
+
+
 
 
 
