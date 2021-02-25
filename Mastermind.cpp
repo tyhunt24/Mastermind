@@ -39,9 +39,38 @@ bool Mastermind::checkCode() {
 }
 
 void Mastermind::sendFeedback() {
+    int blackScore = 0;
+    int whiteScore = 0;
+    int r =0;
+
     if (checkCode()) {
-        cout << "You have answered the correct code.";
+        cout << "You have answered the correct code." <<endl;
     }
+
+    for(int i =0; i < 4; i++) {
+        if(userCode[i] == computerCode[i]) {
+            blackScore++;
+        }
+    }
+
+    for(int i =0; i < 4; i++) {
+        if(computerCode[i] == "red" && userCode[i] != computerCode[i]) {
+            whiteScore++;
+        } else if(computerCode[i] == "blue" && userCode[i] != computerCode[i]) {
+            whiteScore++;
+        }  else if(computerCode[i] == "orange" && userCode[i] != computerCode[i]) {
+            whiteScore++;
+        }  else if(computerCode[i] == "green" && userCode[i] != computerCode[i]) {
+            whiteScore++;
+        }  else if(computerCode[i] == "yellow" && userCode[i] != computerCode[i]) {
+            whiteScore++;
+        }  else if(computerCode[i] == "white" && userCode[i] != computerCode[i]) {
+            whiteScore++;
+        }
+    }
+
+    whitePegs = whiteScore;
+    cout << whiteScore << endl;
 }
 
 
