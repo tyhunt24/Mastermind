@@ -14,10 +14,6 @@ vector
 string
 -
 
-/Users/jeffreyhunt/Desktop/College/CST-210/Section2/Mastermind/Mastermind.cpp
-Mastermind.h
-/Users/jeffreyhunt/Desktop/College/CST-210/Section2/Mastermind/Mastermind.h
-
 /Users/jeffreyhunt/Desktop/College/CST-210/Section2/Mastermind/Mastermind.h
 Code.h
 /Users/jeffreyhunt/Desktop/College/CST-210/Section2/Mastermind/Code.h
@@ -33,4 +29,12 @@ random
 -
 algorithm
 -
+
+/Users/jeffreyhunt/Desktop/College/CST-210/Section2/Mastermind/main.cpp
+iostream
+-
+Mastermind.h
+/Users/jeffreyhunt/Desktop/College/CST-210/Section2/Mastermind/Mastermind.h
+Code.h
+/Users/jeffreyhunt/Desktop/College/CST-210/Section2/Mastermind/Code.h
 
