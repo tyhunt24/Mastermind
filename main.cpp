@@ -29,10 +29,15 @@ int main() {
         cin >> guess1 >> guess2 >> guess3 >> guess4;
         vector<string> userCode = mastermind.getUserCode(guess1, guess2, guess3, guess4);
 
+        mastermind.sendFeedback();
+
+        if(mastermind.checkCode()) {
+            break;
+        }
+
+       // reset the vector code
+
         currentPosition++;
     }
-
-
-
     return 0;
 }
