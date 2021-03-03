@@ -25,7 +25,7 @@ int main() {
         cout<< computerCode[i] << endl;
     }
 
-    while (currentPosition < 10) {
+   while (currentPosition < 10) {
         cin >> guess1 >> guess2 >> guess3 >> guess4;
         vector<string> userCode = mastermind.getUserCode(guess1, guess2, guess3, guess4);
 
@@ -35,7 +35,6 @@ int main() {
             break;
         }
 
-       // reset the vector code
 
         currentPosition++;
     }
