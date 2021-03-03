@@ -21,9 +21,9 @@ int main() {
 
     vector<string> computerCode = mastermind.generateComputerCode();
 
-    for (int i =0; i < 4; i++) {
-        cout<< computerCode[i] << endl;
-    }
+    cout << "Welcome to MasterMind" << endl;
+    cout << "Enter the values as lowercase values" << endl;
+    cout << "Enter 4 different colors out of 6: red blue orange green yellow white: " << endl;
 
    while (currentPosition < 10) {
         cin >> guess1 >> guess2 >> guess3 >> guess4;
@@ -33,6 +33,8 @@ int main() {
 
         if(mastermind.checkCode()) {
             break;
+        } else {
+            cout << "Enter 4 new values: " <<endl;
         }
 
 

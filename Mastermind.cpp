@@ -112,11 +112,10 @@ void Mastermind::sendFeedback() {
             w++;
             realCode[5] = w;
         }
-
-        cout << secretCode[i] << " " <<endl;
     }
 
-
+    blackPegs = blackScore;
+    cout << blackPegs << endl;
 }
 
 
