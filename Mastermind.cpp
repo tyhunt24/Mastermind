@@ -62,60 +62,46 @@ void Mastermind::sendFeedback() {
     //check to see which ones they have put in
     int secretCode[6] = {0, 0, 0, 0, 0, 0};
     int realCode[6] = {0, 0, 0, 0, 0, 0};
-    int r = 0;
-    int b = 0;
-    int o = 0;
-    int g = 0;
-    int y = 0;
-    int w = 0;
 
-    for(int i = 0; i < 6; i++) {
+    for(int i = 0; i < 4; i++) {
         // todo: ask for help on why this not working cause I am confused
         //Set the computerCode
+
         if(computerCode[i] == "red") {
-            r++;
-            secretCode[0] = r;
+            secretCode[0]++;
         }  if(computerCode[i] == "blue") {
-            b++;
-            secretCode[1] = b;
+            secretCode[1]++;
         }   if(computerCode[i] == "orange") {
-            o++;
-            secretCode[2] = o;
+            secretCode[2]++;
         }   if(computerCode[i] == "green") {
-            g++;
-            secretCode[3] = g;
+            secretCode[3]++;
         }  if(computerCode[i] == "yellow") {
-            y++;
-            secretCode[4] = y;
+            secretCode[4]++;
         }  if(computerCode[i] == "white") {
-            w++;
-            secretCode[5] = w;
+            secretCode[5]++;
         }
 
-        // Set the user Code
         if(userCode[i] == "red") {
-            r++;
-            realCode[0] = r;
+            realCode[0]++;
         }  if(userCode[i] == "blue") {
-            b++;
-            realCode[1] = b;
+            realCode[1]++;
         }  if(userCode[i] == "orange") {
-            o++;
-            realCode[2] = o;
+            realCode[2]++;
         }  if(userCode[i] == "green") {
-            g++;
-            realCode[3] = g;
+            realCode[3]++;
         }  if(userCode[i] == "yellow") {
-            y++;
-            realCode[4] = y;
+            realCode[4]++;
         }  if(userCode[i] == "white") {
-            w++;
-            realCode[5] = w;
+            realCode[5]++;
         }
     }
 
+    for(int i = 0; i < 6; i++) {
+        cout << secretCode[i] << " " << realCode[i] << endl;
+    }
+
     blackPegs = blackScore;
-    cout << blackPegs << endl;
+    cout <<"B: " << blackPegs << endl;
 }
 
 
