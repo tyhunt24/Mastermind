@@ -1,6 +1,6 @@
 //
 // Created by Jeffrey Hunt on 2/10/21.
-//
+// This is all my own work with help from the instructor and internet
 
 #ifndef MASTERMIND_MASTERMIND_H
 #define MASTERMIND_MASTERMIND_H

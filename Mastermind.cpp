@@ -1,6 +1,7 @@
 //
 // Created by Jeffrey Hunt on 2/10/21.
-//
+// This is all my own work with help from the instructor and internet
+
 #include "Mastermind.h"
 
 
@@ -45,65 +46,75 @@ void Mastermind::sendFeedback() {
     int blackScore = 0;
     int whiteScore = 0;
 
-    if (checkCode()) {
-        cout << "You have answered the correct code." <<endl;
-    }
 
-    for(int i =0; i < 4; i++) {
-        if(userCode[i] == computerCode[i]) {
+    for (int i = 0; i < 4; i++) {
+        if (userCode[i] == computerCode[i]) {
             blackScore++;
         }
     }
 
-    // set the whiteScore
-    // two arrays inside for this checklist
-    //copy secret code values
-    //copy user code values
     //check to see which ones they have put in
     int secretCode[6] = {0, 0, 0, 0, 0, 0};
     int realCode[6] = {0, 0, 0, 0, 0, 0};
 
-    for(int i = 0; i < 4; i++) {
+    for (int i = 0; i < 4; i++) {
         // todo: ask for help on why this not working cause I am confused
         //Set the computerCode
 
-        if(computerCode[i] == "red") {
+        if (computerCode[i] == "red") {
             secretCode[0]++;
-        }  if(computerCode[i] == "blue") {
+        }
+        if (computerCode[i] == "blue") {
             secretCode[1]++;
-        }   if(computerCode[i] == "orange") {
+        }
+        if (computerCode[i] == "orange") {
             secretCode[2]++;
-        }   if(computerCode[i] == "green") {
+        }
+        if (computerCode[i] == "green") {
             secretCode[3]++;
-        }  if(computerCode[i] == "yellow") {
+        }
+        if (computerCode[i] == "yellow") {
             secretCode[4]++;
-        }  if(computerCode[i] == "white") {
+        }
+        if (computerCode[i] == "white") {
             secretCode[5]++;
         }
 
-        if(userCode[i] == "red") {
+        if (userCode[i] == "red") {
             realCode[0]++;
-        }  if(userCode[i] == "blue") {
+        }
+        if (userCode[i] == "blue") {
             realCode[1]++;
-        }  if(userCode[i] == "orange") {
+        }
+        if (userCode[i] == "orange") {
             realCode[2]++;
-        }  if(userCode[i] == "green") {
+        }
+        if (userCode[i] == "green") {
             realCode[3]++;
-        }  if(userCode[i] == "yellow") {
+        }
+        if (userCode[i] == "yellow") {
             realCode[4]++;
-        }  if(userCode[i] == "white") {
+        }
+        if (userCode[i] == "white") {
             realCode[5]++;
         }
     }
 
-    for(int i = 0; i < 6; i++) {
-        cout << secretCode[i] << " " << realCode[i] << endl;
+    for (int i = 0; i < 6; i++) {
+        // need to compare the two together
+        // todo: get white score from two arrays
+        if(realCode[i] < secretCode[i]) {
+            whiteScore += realCode[i];
+        } else {
+            whiteScore += secretCode[i];
+        }
+
     }
-
     blackPegs = blackScore;
-    cout <<"B: " << blackPegs << endl;
-}
-
+    whitePegs = whiteScore;
+    whitePegs = whitePegs - blackPegs;
+    cout << "B: " << blackPegs << " W: " << whitePegs << endl;
+    }
 
 
 
