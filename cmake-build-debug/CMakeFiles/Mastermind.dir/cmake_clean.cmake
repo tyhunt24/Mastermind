@@ -1,5 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Mastermind.dir/Code.cpp.o"
   "CMakeFiles/Mastermind.dir/Mastermind.cpp.o"
   "CMakeFiles/Mastermind.dir/main.cpp.o"
   "Mastermind"

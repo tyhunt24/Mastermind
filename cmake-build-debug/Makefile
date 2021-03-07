@@ -143,33 +143,6 @@ Mastermind/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mastermind.dir/build.make CMakeFiles/Mastermind.dir/build
 .PHONY : Mastermind/fast
 
-Code.o: Code.cpp.o
-
-.PHONY : Code.o
-
-# target to build an object file
-Code.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mastermind.dir/build.make CMakeFiles/Mastermind.dir/Code.cpp.o
-.PHONY : Code.cpp.o
-
-Code.i: Code.cpp.i
-
-.PHONY : Code.i
-
-# target to preprocess a source file
-Code.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mastermind.dir/build.make CMakeFiles/Mastermind.dir/Code.cpp.i
-.PHONY : Code.cpp.i
-
-Code.s: Code.cpp.s
-
-.PHONY : Code.s
-
-# target to generate assembly for a file
-Code.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mastermind.dir/build.make CMakeFiles/Mastermind.dir/Code.cpp.s
-.PHONY : Code.cpp.s
-
 Mastermind.o: Mastermind.cpp.o
 
 .PHONY : Mastermind.o
@@ -233,9 +206,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Mastermind"
-	@echo "... Code.o"
-	@echo "... Code.i"
-	@echo "... Code.s"
 	@echo "... Mastermind.o"
 	@echo "... Mastermind.i"
 	@echo "... Mastermind.s"

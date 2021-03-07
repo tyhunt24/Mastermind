@@ -80,12 +80,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/jeffreyhunt/Desktop/College/CST-210/Section2/Mastermind/Code.cpp">
-			<Option target="Mastermind"/>
-		</Unit>
-		<Unit filename="/Users/jeffreyhunt/Desktop/College/CST-210/Section2/Mastermind/Code.h">
-			<Option target="Mastermind"/>
-		</Unit>
 		<Unit filename="/Users/jeffreyhunt/Desktop/College/CST-210/Section2/Mastermind/Mastermind.cpp">
 			<Option target="Mastermind"/>
 		</Unit>

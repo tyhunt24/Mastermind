@@ -4,7 +4,6 @@
 
 #ifndef MASTERMIND_MASTERMIND_H
 #define MASTERMIND_MASTERMIND_H
-#include "Code.h"
 #include <iostream>
 #include <ctime>
 #include <String>
