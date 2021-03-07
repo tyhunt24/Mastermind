@@ -54,7 +54,7 @@ int main() {
    // send back if the user loses the game
    if(!mastermind.checkCode()) {
        cout << "sorry you have lost the game." << endl;
-       cout << "Here is the correct code: " << endl;
+       cout << "Here is the correct code: ";
 
        // Display the correct code
        for(int i = 0; i< computerCode.size(); i++) {
@@ -63,3 +63,5 @@ int main() {
    }
     return 0;
 }
+
+// Loom video: https://www.loom.com/share/bf08cbf1c6fb46e7b4414f91de7232bc

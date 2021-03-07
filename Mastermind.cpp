@@ -4,25 +4,24 @@
 
 #include "Mastermind.h"
 
-
-Mastermind::Mastermind() {
-
-}
-
+// allows to gert user code
 vector<string> Mastermind::getUserCode(const string& input1, const string& input2, const string& input3, const string& input4) {
     userCode.clear();
 
-    userCode.push_back(input1);
-    userCode.push_back(input2);
-    userCode.push_back(input3);
-    userCode.push_back(input4);
+    //pushes back into a vector
+    userCode.push_back(input1); //green
+    userCode.push_back(input2); //orange
+    userCode.push_back(input3); //blue
+    userCode.push_back(input4);// white
 
     return userCode;
 }
 
+//generates the computer code
 vector<string> Mastermind::generateComputerCode() {
     srand(time(0));
 
+    //takes 4 different values from here into a vector
     vector<string> colors = {"red", "blue", "orange", "green", "yellow", "white"};
     for(int i=0; i < 4; i++) {
         int j = rand() % colors.size();
@@ -33,6 +32,7 @@ vector<string> Mastermind::generateComputerCode() {
     return computerCode;
 }
 
+//checks to se eif the code is true or false
 bool Mastermind::checkCode() {
     for(int i =0; i < 4; i++) {
         if(userCode[i] != computerCode[i]) {
@@ -42,11 +42,12 @@ bool Mastermind::checkCode() {
     return true;
 }
 
+//sends the user feedback back
 void Mastermind::sendFeedback() {
     int blackScore = 0;
     int whiteScore = 0;
 
-
+    //checks the white score
     for (int i = 0; i < 4; i++) {
         if (userCode[i] == computerCode[i]) {
             blackScore++;
@@ -58,9 +59,7 @@ void Mastermind::sendFeedback() {
     int realCode[6] = {0, 0, 0, 0, 0, 0};
 
     for (int i = 0; i < 4; i++) {
-        // todo: ask for help on why this not working cause I am confused
         //Set the computerCode
-
         if (computerCode[i] == "red") {
             secretCode[0]++;
         }
@@ -80,6 +79,7 @@ void Mastermind::sendFeedback() {
             secretCode[5]++;
         }
 
+        //gets values for the real code
         if (userCode[i] == "red") {
             realCode[0]++;
         }
@@ -102,7 +102,7 @@ void Mastermind::sendFeedback() {
 
     for (int i = 0; i < 6; i++) {
         // need to compare the two together
-        // todo: get white score from two arrays
+        //set the white score if it is less then the secret code
         if(realCode[i] < secretCode[i]) {
             whiteScore += realCode[i];
         } else {
@@ -110,8 +110,11 @@ void Mastermind::sendFeedback() {
         }
 
     }
+    //sets the black score
     blackPegs = blackScore;
     whitePegs = whiteScore;
+
+    //counts the white pegs
     whitePegs = whitePegs - blackPegs;
     cout << "B: " << blackPegs << " W: " << whitePegs << endl;
     }
